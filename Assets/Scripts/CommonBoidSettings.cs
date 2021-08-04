@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+ * Author: Marshall (Xiangyu) Wang
+ * Github: @MarshallW906/BoidSimulation2D
+ * Time: Aug 2021
+ * This Boid model was implemented accourding to Craig Reynolds' paper in 1986: http://www.red3d.com/cwr/boids/
+ */
 public class CommonBoidSettings : Singleton<CommonBoidSettings>
 {
     [Header("Perception")]

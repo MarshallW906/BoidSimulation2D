@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Author: Marshall (Xiangyu) Wang
+ * Github: @MarshallW906/BoidSimulation2D
+ * Time: Aug 2021
+ */
 public class BoidGenerator : MonoBehaviour
 {
     public GameObject prefabBoid;

@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+/*
+ * Author: Marshall (Xiangyu) Wang
+ * Github: @MarshallW906/BoidSimulation2D
+ * Time: Aug 2021
+ */
 [CustomEditor(typeof(ObstacleGenerator))]
 public class ObstacleGeneratorEditor : Editor
 {

@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Author: Marshall (Xiangyu) Wang
+ * Github: @MarshallW906/BoidSimulation2D
+ * Time: Aug 2021
+ * This Boid model was implemented accourding to Craig Reynolds' paper in 1986: http://www.red3d.com/cwr/boids/
+ */
 public class SingleBoid : MonoBehaviour
 {
+    // all the comments were replaced by CommonBuildSettings.Instance.xxxxx
     //[Range(0f, 100f)] public float innerRadius;
     //[Range(0f, 90f)] public float backIgnoreHalfAngle;
 
