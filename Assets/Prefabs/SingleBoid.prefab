@@ -135,9 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e48d15da6cbd44898808a9ece52976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useCommonInitMoveSettings: 1
-  useRandomInitMoveDir: 1
-  initMoveDir: {x: 0, y: 1}
+  settings: {fileID: 11400000, guid: 31361762e18440f43a91d9e09c1ac3e5, type: 2}
   moveDir: {x: 0, y: 0, z: 0}
   totalAcceleration: {x: 0, y: 0, z: 0}
   accCollisionAvoidance: {x: 0, y: 0, z: 0}

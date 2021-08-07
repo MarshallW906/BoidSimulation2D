@@ -2,14 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-/*
- * Author: Marshall (Xiangyu) Wang
- * Github: @MarshallW906/BoidSimulation2D
- * Time: Aug 2021
- * This Boid model was implemented accourding to Craig Reynolds' paper in 1986: http://www.red3d.com/cwr/boids/
- */
-public class CommonBoidSettings : Singleton<CommonBoidSettings>
+[CreateAssetMenu(fileName = "BoidSettingData", menuName = "ScriptableObjects/BoidSettings", order = 1)]
+public class BoidSettings : ScriptableObject
 {
     [Header("Perception")]
     [Range(0f, 90f)] public float backIgnoreHalfAngle;
@@ -21,7 +15,7 @@ public class CommonBoidSettings : Singleton<CommonBoidSettings>
     [Range(1f, 100f)] public float maxPosY;
 
     [Header("Boid simulation params")]
-    [SerializeField] private bool useRandomInitMoveDir;
+    public bool useRandomInitMoveDir;
     public Vector2 initMoveDir;
     [Range(0f, 10f)] public float maxMoveSpeedSqr;
     [Range(0f, 1f)] public float kDamp;
@@ -32,12 +26,4 @@ public class CommonBoidSettings : Singleton<CommonBoidSettings>
     [Range(0f, 10f)] public float kCohesion;
 
     [Range(0f, 10f)] public float accelerationQuotaSqr;
-
-    private void Start()
-    {
-        if (useRandomInitMoveDir)
-        {
-            initMoveDir = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
-        }
-    }
 }
